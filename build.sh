@@ -5,9 +5,9 @@
 
 
 # Init Script
-ROM_DEVICE=revengeos_tissot
+ROM_DEVICE=ssos_tissot
 TARGET=userdebug
-ROM=ros
+ROM=ssos
 DEVICE=Tissot
 BUILD_START=$(date +"%s")
 FOLDER=$HOME/$ROM
@@ -18,7 +18,7 @@ export KBUILD_BUILD_HOST="TakeshiroCI"
 
 TOKEN=""
 CHAT_ID=""
-TYPE="RevengeOS"
+TYPE="ShapeShiftOS"
 
 # Color Code Script
 black='\e[0;30m'        # Black
@@ -62,10 +62,10 @@ echo -e "***********************************************$nocol"
 
 msg1=$(mktemp)
 {
-  echo "*Building RevengeOS for Mi A1 (tissot)*"
+  echo "*Building ShapeShiftOS Q for Mi A1 (tissot)*"
   echo "*Start Time:* $(date +"%Y-%m-%d"-%H%M)"
   echo "*Build Type:* $TARGET"
-  echo "*Android Version:* 11 (R)"
+  echo "*Android Version:* 10 (Q)"
 } > "${msg1}"
 MESSAGE1=$(cat "$msg1")
 
@@ -115,7 +115,7 @@ DIFF=$(($BUILD_END - $BUILD_START))
 msg=$(mktemp)
 {
   echo "*BUILD SUCCESS!* $DIFF"
-  echo "*Link:* https://test.takeshiro.workers.dev/0:/RevengeOS/"
+  echo "*Link:* https://downloads.moritoki.ml/0:/RevengeOS/"
   echo "*NOTE: ONLY TESTERS HAVE ACCESS TO THIS LINK! DO NOT ASK FOR PASSWORD!*"
 } > "${msg}"
 MESSAGE=$(cat "$msg")
