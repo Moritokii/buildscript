@@ -13,8 +13,8 @@ BUILD_START=$(date +"%s")
 FOLDER=$HOME/$ROM
 OUT=$FOLDER/out/target/product/tissot
 
-export KBUILD_BUILD_USER="Takeshiro"
-export KBUILD_BUILD_HOST="TakeshiroCI"
+export KBUILD_BUILD_USER="Moritoki"
+export KBUILD_BUILD_HOST="MoritokiCI"
 
 TOKEN=""
 CHAT_ID=""
